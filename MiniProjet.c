@@ -82,7 +82,7 @@ void supprimerlivre() {
     scanf(" %[^\n]", titreCherche);
     for (int i = 0; i < nombrelivres; i++) {
         if (strcmp(titres[i], titreCherche) == 0) {
-            // Décaler les livres suivants
+
             for (int j = i; j < nombrelivres - 1; j++) {
                 strcpy(titres[j], titres[j + 1]);
                 strcpy(auteurs[j], auteurs[j + 1]);
